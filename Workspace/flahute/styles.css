@@ -1,0 +1,361 @@
+:root {
+  --pink-color: #e8b5ce;
+  --dark-color: #2a293e;
+  --grey-color: #bdbdbd;
+  --lightGrey-color: #e9e8e8;
+  --vanilla-color: #f3e0be;
+  --lightVanilla-color: #f7eddc;
+
+  --font-sizeXL: 5rem;
+  --font-sizeL: 3.5rem;
+  --font-sizeM: 2rem;
+  --font-sizeS: 1.5rem;
+  --font-sizeXS: 0.5rem;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Krub", serif !important;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* .top-nav {
+  background-color: #2f4f4f;
+  max-height: 35rem;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+} */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.navbar ul li {
+  text-decoration: none;
+  color: #e9e8e8;
+}
+
+.nav-icons {
+  margin-left: 2rem;
+}
+.nav-icons a {
+  color: whitesmoke;
+  padding: 1rem;
+}
+
+.text-light {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  text-decoration: none !important;
+}
+
+.nav-more {
+  margin: 0;
+  font-size: var(--font-sizeL);
+}
+
+.main-project {
+  background-color: #2a293e !important;
+  border-radius: 15px !important;
+  padding: 0.3rem !important;
+  margin-left: 1rem !important;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.blockquote-footer {
+  color: orange !important;
+  font-weight: bold;
+}
+
+.petelka {
+  background-image: url(./assets/images/petelka-img-main.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0;
+  background-size: cover;
+  z-index: -2;
+}
+
+.overlay {
+  opacity: 0.8;
+  z-index: -1;
+  background-color: #bdbdbd;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.petelka-svg {
+  height: 10%;
+}
+
+.img-map {
+  max-width: 300px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.img-map {
+  padding: 2rem;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.gallery-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.partners-row {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.partners-row ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.people-img {
+  width: 100%;
+  height: 500px;
+
+  background: url("assets/images/ludzie-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.9;
+  font-family: "Bitter", serif;
+  filter: grayscale(50%);
+  -webkit-filter: grayscale(50%);
+}
+
+.people {
+  color: orange !important;
+  font-family: "Krub", serif !important;
+  font-size: 70px;
+  padding: 20px;
+  margin-right: 19px;
+}
+
+.partners {
+  background-color: #f7f7f7;
+  margin-top: 40px;
+  padding: 20px;
+  display: flex;
+}
+.partners-row li {
+  background-color: #bdbdbd;
+  flex-wrap: wrap;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.nav-link {
+  color: black !important;
+}
+
+.blog-main-text {
+  line-height: 2.5rem;
+}
+.big-letter::first-letter {
+  font-size: 300%;
+  color: #e22b49;
+}
+
+.blog-text {
+  background-color: var(--lightGrey-color);
+  padding: 3rem;
+}
+
+.cite {
+  display: inline;
+  width: 50%;
+  height: 50%;
+}
+
+.they-say {
+  display: inline;
+  z-index: 30;
+}
+
+/* TEAM */
+
+.team4 {
+  color: #8d97ad;
+  font-weight: 300;
+}
+
+.team4 h1,
+.team4 h2,
+.team4 h3,
+.team4 h4,
+.team4 h5,
+.team4 h6 {
+  color: #3e4555;
+}
+
+.team4 .font-weight-medium {
+  font-weight: 500;
+}
+
+.team4 h5 {
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.team4 .subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+  font-size: 13px;
+}
+
+.team4 ul li a {
+  color: #8d97ad;
+  padding-right: 15px;
+  -webkit-transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.team4 ul li a:hover {
+  -webkit-transform: translate3d(0px, -5px, 0px);
+  transform: translate3d(0px, -5px, 0px);
+  color: #316ce8;
+}
+
+.team4 img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+.team4 img:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+.list-inline-item {
+  height: 1rem;
+  color: black;
+  position: inline;
+}
+
+.footer {
+  background-color: #2f4f4f;
+  color: #f7f7f7;
+  filter: grayscale(50%);
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.numbers {
+  background-image: url(./assets/images/PETELKA.jpeg);
+
+  color: #f7f7f7;
+  background-size: cover;
+  font-size: 150%;
+}
+
+#counter-1 {
+  font-size: var(--font-sizeL);
+  margin: 0;
+}
+
+.align-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.align-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.slide-in {
+  opacity: 0;
+  transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+}
+
+.align-left.slide-in {
+  transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide-in {
+  transform: translateX(30%) scale(0.95);
+}
+
+.slide-in.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+
+.title-tatry {
+  font-size: var(--font-sizeL);
+}
+
+.h1-tatry {
+  font-size: var(--font-sizeL);
+}
+
+.enlarged {
+  transform: scale(3);
+  -webkit-transform: scale(3);
+  -moz-transform: scale(3);
+  -ms-transform: scale(3);
+  -o-transform: scale(3);
+}
+
+.card-img-top:hover {
+  filter: saturate(2);
+}
