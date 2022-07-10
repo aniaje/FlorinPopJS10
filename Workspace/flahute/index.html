@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/baguetteBox.min.css" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,18 +14,18 @@
       crossorigin="anonymous"
     />
     <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
     />
     <!-- Google Fonts -->
     <link
-    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
     />
     <!-- MDB -->
     <link
-    src="lib/MDB5-STANDARD-UI-KIT-Pro-Advanced-4.2.0/css/mdb.min.css"
-    rel="stylesheet"
+      src="lib/MDB5-STANDARD-UI-KIT-Pro-Advanced-4.2.0/css/mdb.min.css"
+      rel="stylesheet"
     />
     <!-- JavaScript Bundle with Popper -->
     <script
@@ -34,8 +36,12 @@
 
     <title>flahute</title>
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark p-md-1 p-xs-1 bg-dark opacity-75" style="position:absolute; top:0; z-index:3 ">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark p-md-1 p-xs-1 bg-dark opacity-75"
+      style="position: absolute; top: 0; z-index: 3"
+    >
       <div class="container">
         <a class="navbar-brand" href="#">FLAHUTE</a>
         <button
@@ -51,50 +57,86 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="mx-auto "></div>
-          <ul class="navbar-nav ">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav fw-light">
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">.</a>
+              <a class="nav-link text-white" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">O NAS</a>
+              <a class="nav-link text-white" href="#">O Nas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Blog</a>
+              <a class="nav-link text-white" href="#blog">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">TEAM</a>
+              <a class="nav-link text-white" href="#people">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">KONTAKT</a>
+              <a class="nav-link text-white" href="#footer">Kontakt</a>
             </li>
           </ul>
           <ul class="list-inline nav-icons">
-              <li class="list-inline-item">
-                <a href="#" class="text-decoration-none d-block px-1"
-                  ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                  </svg></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="text-decoration-none d-block px-1"
-                  ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                  </svg></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="text-decoration-none d-block px-1"
-                  ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                  </svg></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="text-decoration-none d-block px-1"
-                  ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-strava" viewBox="0 0 16 16">
-                    <path d="M6.731 0 2 9.125h2.788L6.73 5.497l1.93 3.628h2.766L6.731 0zm4.694 9.125-1.372 2.756L8.66 9.125H6.547L10.053 16l3.484-6.875h-2.112z"/>
-                  </svg></a>
-              </li>
-            </ul>
+            <li class="list-inline-item">
+              <a href="#" class="text-decoration-none d-block px-1"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-facebook"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  /></svg
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-decoration-none d-block px-1"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-twitter"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                  /></svg
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-decoration-none d-block px-1"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-instagram"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  /></svg
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-decoration-none d-block px-1"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-strava"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.731 0 2 9.125h2.788L6.73 5.497l1.93 3.628h2.766L6.731 0zm4.694 9.125-1.372 2.756L8.66 9.125H6.547L10.053 16l3.484-6.875h-2.112z"
+                  /></svg
+              ></a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -106,425 +148,677 @@
       </div>
     </div>
 
-   
-
-      <div
-        id="carouselExampleControlsNoTouching"
-        class="carousel slide"
-        data-bs-touch="false"
-        data-bs-interval="false"
-      >
+    <div
+      id="carouselExampleControlsNoTouching"
+      class="carousel slide"
+      data-bs-touch="false"
+      data-bs-interval="false"
+    >
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleControlsNoTouching"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleControlsNoTouching"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleControlsNoTouching"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleControlsNoTouching"
+          data-bs-slide-to="3"
+          aria-current="true"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleControlsNoTouching"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleControlsNoTouching"
+          data-bs-slide-to="5"
+          aria-label="Slide 6"
+        ></button>
       </div>
-   
 
-        <div class="carousel-inner">
-          
-          <div class="carousel-item active">
-            <img
-              src="./assets/images/hero-img.jpg"
-              class="d-block w-100"
-              alt="hero-img"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Rowerem na K2</h5>
-              <p><b>ROUTES</b></p>
-              <span class="badge rounded-pill text-bg-secondary m fw-light">Top Stories</span>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./assets/images/hero-img.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Rowerem na K2</h5>
-              <p><b>ROUTES</b></p>
-              <span class="badge rounded-pill text-bg-secondary m fw-light">Top Stories</span>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/images/hero-img.jpg" class="d-block w-100" alt="..." />  <div class="carousel-caption d-none d-md-block">
-              <h5>Rowerem na K2</h5>
-              <p class="fw-light">ROUTES</p>
-              <span class="badge rounded-pill text-bg-secondary fw-light">Top Stories</span>
-            </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./assets/images/hero-img.jpg"
+            class="d-block w-100"
+            alt="hero-img"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Rowerem na K2</h5>
+            <p><b>ROUTES</b></p>
+            <span class="badge rounded-pill text-bg-secondary m fw-light"
+              >Top Stories</span
+            >
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleControlsNoTouching"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleControlsNoTouching"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item">
+          <img
+            src="./assets/images/hero-img.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Rowerem na K2</h5>
+            <p><b>ROUTES</b></p>
+            <span class="badge rounded-pill text-bg-secondary m fw-light"
+              >Top Stories</span
+            >
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/images/hero-img.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Rowerem na K2</h5>
+            <p class="fw-light">ROUTES</p>
+            <span class="badge rounded-pill text-bg-secondary fw-light"
+              >Top Stories</span
+            >
+          </div>
+        </div>
       </div>
-    </section>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
     <div class="container-caption w-100 p-2">
-      <div class="row w-100 mb-1 text-center"><div class="col-xs-12"><h5>Rowerem na K2</h5>
-        <span class="pe-3 text-muted fw-light cat-title"><b>ROUTES</b></span>
-        <span class="badge rounded-pill text-bg-secondary s fw-light">Top Stories</span></div></div>
+      <div class="row w-100 mb-1 text-center">
+        <div class="col-xs-12">
+          <h5>Rowerem na K2</h5>
+          <span class="pe-3 text-muted fw-light cat-title"><b>ROUTES</b></span>
+          <span class="badge rounded-pill text-bg-secondary s fw-light"
+            >Top Stories</span
+          >
+        </div>
+      </div>
     </div>
 
-    <section class="news pt-0 justify-content-center">
+    <section class="news pt-0 justify-content-center" id="blog">
       <div class="container-blog mt-md-5 justify-content-center me-0 ms-0">
         <h2 class="mx-4 m-3 text-center">Recent News</h2>
-        <ul class="row d-lg-flex list-unstyled image-block justify-content-center px-lg-0 mx-lg-0">
-          <li class="col-lg-2 col-md-4 col-xs-6 image-block full-width"><span class="text-muted post-date">12 / 02 / 2022 </span>
+        <ul
+          class="row d-lg-flex list-unstyled image-block justify-content-center px-lg-0 mx-lg-0"
+        >
+          <li class="col-lg-2 col-md-4 col-xs-6 image-block full-width">
+            <span class="text-muted post-date">12 / 02 / 2022 </span>
             <div class="image-block-inner">
               <a class="mh-100" href="#">
-                <img src="assets/images/hero-img2-news.jpg" alt="" class="img-responsive w-100"></a><span class="hp-posts-cat mb-0">Awards</span>
-                <h4 class="mt-0 pt-0"><div class="before-title">|</div><a href="#">200km pizza i lody! i kawa.</a></h4>
-                <!--  <p></p> -->
-               
-              </div><!-- .image-block-inner -->
-            </li><li class="col-lg-2 col-md-4 col-xs-6 image-block full-width"><span class="text-muted post-date">12 / 02 / 2022 </span>
-              <div class="image-block-inner">
-                <a class="mh-100" href="#">
-                  <img src="assets/images/road-img.jpg" alt="" class="img-responsive w-100"></a><span class="hp-posts-cat mb-0">Routes</span>
-                  <h4 class="mt-0 pt-0"><div class="before-title">|</div><a href="#">200km pizza i lody! i kawa.</a></h4>
-                  <!--  <p></p> -->
-                 
-                </div><!-- .image-block-inner -->
-              </li><li class="col-lg-2 col-md-4 col-xs-6 image-block full-width"><span class="text-muted post-date">12 / 02 / 2022 </span>
-                <div class="image-block-inner">
-                  <a class="mh-100" href="#">
-                    <img src="assets/images/bike3-news.jpg" alt="" class="img-responsive w-100"></a><span class="hp-posts-cat mb-0">People</span>
-                    <h4 class="mt-0 pt-0"><div class="before-title">|</div><a href="#">200km pizza i lody! i kawa.</a></h4>
-                    <!--  <p></p> -->
-                   
-                  </div><!-- .image-block-inner -->
-                </li><li class="col-lg-2 col-md-4 col-xs-6 image-block full-width"><span class="text-muted post-date">12 / 02 / 2022 </span>
-                  <div class="image-block-inner">
-                    <a class="mh-100" href="#">
-                      <img src="assets/images/road-img.jpg" alt="" class="img-responsive w-100"></a><span class="hp-posts-cat mb-0">Awards</span>
-                      <h4 class="mt-0 pt-0"><div class="before-title">|</div><a href="#">200km pizza i lody! i kawa.</a></h4>
-                      <!--  <p></p> -->
-                     
-                    </div><!-- .image-block-inner -->
-                  </li><li class="col-lg-2 col-md-4 col-s-5 col-xs-6 image-block full-width"><span class="text-muted post-date">12 / 02 / 2022 </span>
-                    <div class="image-block-inner">
-                      <a class="mh-100" href="#">
-                        <img src="assets/images/hero-img2-news.jpg" alt="" class="img-responsive w-100"></a><span class="hp-posts-cat mb-0">Awards</span>
-                        <h4 class="mt-0 pt-0"><div class="before-title">|</div><a href="#">200km pizza i lody! i kawa.</a></h4>
-                        <!--  <p></p> -->
-                       
-                      </div><!-- .image-block-inner -->
-                    </li>
-                    <li class="col-lg-2 col-md-4 col-xs-6 image-block full-width">
-                      <span class="text-muted post-date">12 / 02 / 2022 </span>
-                      <div class="image-block-inner">
-                        <a class="mh-100" href="#">
-                          <img src="assets/images/road-img.jpg" alt="" class="img-responsive w-100"></a><span class="hp-posts-cat mb-0">Awards</span>
-                          <h4 class="mt-0 pt-0"><div class="before-title">|</div><a href="#">200km pizza i lody! i kawa.</a></h4>
-                          <!--  <p></p> -->
-                         
-                        </div><!-- .image-block-inner -->
-                      </li>
-          </ul>
-        </div>
-        <div class="container container-blog mt-md-5">
-          <h2 class="mx-4 mb-5 text-center ">więcej ></h2>
-      </section>
-<div class="container cite mt-5 ms-0 ps-0">
-    <div class="row ms-0 ps-0 align-items-center"><div class="col-md-4 ms-0 ps-0 align-items-start"><img class="img-fluid align-left slide-in"  src="./assets/images/pngegg-2.png" ></div>
-    <div class="col-md-7 text-end p-4  "><figure class="p-4">
-        <blockquote class="blockquote justify-content-end">
-          <p><b>Mamy wspólny cel</b>,czeka nas wspólna walka z kilometrami, przewyższeniami, zmęczeniem i własnymi słabościami.
-        </p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-          Someone famous in <cite title="Source Title">TVP</cite>
-        </figcaption>
-      </figure>
-    <figure class="p-4 text-end">
-      <blockquote class="blockquote ">
-        <p>Od kiedy jezdze z <b>Flahute</b> nie zlapalam zadnej gumy!</p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-        Someone famous in <cite title="Source Title">TVN</cite>
-      </figcaption>
-    </figure></div></div></div>
-    
-  <section class="numbers mb-5 mt-3 p-3"> 
-
-     <div class="row p-4 justify-content-center "><div class="col-md-6 text-center"><p><b>jakis</b> tytul</p><h5>bikes we love</h5></div></div><div class="row justify-content-center text-center mt-3"><div class="col-md-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  transform="scale(3)" class="bi bi-geo-fill icon-numbers" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
-      </svg><p class="p-3">ROWERY</p><p id="counter-1"></p></div> <div class="col-md-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" transform="scale(4)" fill="currentColor" class="bi bi-bicycle icon-numbers" viewBox="0 0 16 16">
-        <path d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5zm1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139L5.5 6.943zM8 9.057 9.598 6.5H6.402L8 9.057zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877h1.035zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.623z"/>
-      </svg><p class="p-3">PROJEKTY<p id="counter-3"></p></div> <div class="col-md-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  transform="scale(4)" class="bi bi-star-fill icon-numbers" viewBox="0 0 16 16">
-        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-      </svg><p class="p-3">KILOMETRY<p id="counter-1" class="counter m-0 p-0"></p></div>
-    </div> 
-      
-  </section> 
-        
-      <section id="people" >
-        <div class="container  people-img">
-            <div class="row">
-                <div class="col-md-12 people text-end align-items-center">
-                    <p><button class="btn btn-outline-warning btn-lg me-5 mt-0 p-3">TEAM</button></p>
-                 
-                </div>
+                <img
+                  src="assets/images/hero-img2-news.jpg"
+                  alt=""
+                  class="img-responsive w-100" /></a
+              ><span class="hp-posts-cat mb-0">Awards</span>
+              <h4 class="mt-0 pt-0">
+                <div class="before-title">|</div>
+                <a href="#">200km pizza i lody! i kawa.</a>
+              </h4>
+              <!--  <p></p> -->
             </div>
-        
-        </div>
-        
-        
-        </section>
-        
-        <section class=""> 
-        <div class="container ">
-            <div class="row">
-                <div class="col m-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veniam, quis corrupti exercitationem, dignissimos voluptatem eaque nostrum similique perspiciatis ea, praesentium accusamus eveniet odio. Nobis accusantium culpa asperiores ad repudiandae.</div>
+            <!-- .image-block-inner -->
+          </li>
+          <li class="col-lg-2 col-md-4 col-xs-6 image-block full-width">
+            <span class="text-muted post-date">12 / 02 / 2022 </span>
+            <div class="image-block-inner">
+              <a class="mh-100" href="#">
+                <img
+                  src="assets/images/road-img.jpg"
+                  alt=""
+                  class="img-responsive w-100" /></a
+              ><span class="hp-posts-cat mb-0">Routes</span>
+              <h4 class="mt-0 pt-0">
+                <div class="before-title">|</div>
+                <a href="#">200km pizza i lody! i kawa.</a>
+              </h4>
+              <!--  <p></p> -->
             </div>
-        </div>
-        <div class="py-5 team4">
-            <div class="container">
-              <div class="row justify-content-center mb-4">
-                <div class="col-md-7 text-center">
-                  <h3 class="mb-3">Amazing Team</h3>
-                  <h6 class="subtitle fw-light">
-                    zobacz, kto z nami jezdzi
-                  </h6>
-                </div>
-              </div>
-              <div class="row">
-                <!-- column  -->
-                <div class="col-md-3 col-xs-5 mb-4">
-                  <!-- Row -->       
-                      <img
-                      src="/assets/images/faces/biker-1.jpeg"
-                        alt="wrapkit"
-                        class="img-fluid rounded-circle"
-                      />
-          
-                      <div class="pt-2">
-                        <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
-                        <h6 class="subtitle mb-3">Biker</h6>
-                        <p>
-                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, assumenda.
-                        </p>
-                        <ul class="list-inline">
-                          <li class="list-inline-item">
-                            <a href="#" class="text-decoration-none d-block px-1"
-                              ><i class="icon-social-facebook"></i
-                            ></a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a href="#" class="text-decoration-none d-block px-1"
-                              ><i class="icon-social-twitter"></i
-                            ></a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a href="#" class="text-decoration-none d-block px-1"
-                              ><i class="icon-social-instagram"></i
-                            ></a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a href="#" class="text-decoration-none d-block px-1"
-                              ><i class="icon-social-behance"></i
-                            ></a>
-                          </li>
-                        </ul>
-             
-                  </div>
-                 
-                </div>
-          
-                <div class="col-md-3 col-xs-5 mb-4">
-    
-                      <img
-                      src="/assets/images/faces/biker-1.jpeg"
-                        alt="wrapkit"
-                        class="img-fluid rounded-circle"
-                      />
-                      <div class="pt-2">
-                        <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
-                        <h6 class="subtitle mb-3">Biker</h6>
-                        <p>
-                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, assumenda.
-                        </p>
-                        <ul class="list-inline">
-                          <li class="list-inline-item">
-                            <a href="#" class="text-decoration-none d-block px-1"
-                              ><i class="icon-social-facebook"></i
-                            ></a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a href="#" class="text-decoration-none d-block px-1"
-                              ><i class="icon-social-twitter"></i
-                            ></a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a href="#" class="text-decoration-none d-block px-1"
-                              ><i class="icon-social-instagram"></i
-                            ></a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a href="#" class="text-decoration-none d-block px-1"
-                              ><i class="icon-social-behance"></i
-                            ></a>
-                          </li>
-                        </ul>
-                      </div>
-
-                </div>
-                    
-                <div class="col-md-3 col-xs-5 mb-4">
-                      <img
-                      src="/assets/images/faces/biker-1.jpeg"
-                        alt="wrapkit"
-                        class="img-fluid rounded-circle"
-                      />
-                  
-                  
-                      <div class="pt-2">
-                        <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
-                        <h6 class="subtitle mb-3">Biker</h6>
-                        <p>
-                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, assumenda.
-                        </p>
-                        <ul class="list-inline">
-                          <li class="list-inline-item">
-                            <a href="#" class="text-decoration-none d-block px-1"
-                              ><i class="icon-social-facebook"></i
-                            ></a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a href="#" class="text-decoration-none d-block px-1"
-                              ><i class="icon-social-twitter"></i
-                            ></a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a href="#" class="text-decoration-none d-block px-1"
-                              ><i class="icon-social-instagram"></i
-                            ></a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a href="#" class="text-decoration-none d-block px-1"
-                              ><i class="icon-social-behance"></i
-                            ></a>
-                          </li>
-                        </ul>
-                      </div>
-           
-                </div>
-              
-                <div class="col-md-3 col-xs-5 mb-4">
-                      <img
-                        src="/assets/images/faces/biker-1.jpeg"
-                        alt="wrapkit"
-                        class="img-fluid rounded-circle"
-                      />
-
-                      <div class="pt-2">
-                        <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
-                        <h6 class="subtitle mb-3">Biker</h6>
-                        <p>
-                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, assumenda.
-                        </p>
-                        <ul class="list-inline">
-                          <li class="list-inline-item">
-                            <a href="#" class="text-decoration-none d-block px-1"
-                              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                              </svg></a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a href="#" class="text-decoration-none d-block px-1"
-                              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                              </svg></a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a href="#" class="text-decoration-none d-block px-1"
-                              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                              </svg></a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a href="#" class="text-decoration-none d-block px-1"
-                              ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-strava" viewBox="0 0 16 16">
-                                <path d="M6.731 0 2 9.125h2.788L6.73 5.497l1.93 3.628h2.766L6.731 0zm4.694 9.125-1.372 2.756L8.66 9.125H6.547L10.053 16l3.484-6.875h-2.112z"/>
-                              </svg></a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-               
-                </div>
-              </div>
+            <!-- .image-block-inner -->
+          </li>
+          <li class="col-lg-2 col-md-4 col-xs-6 image-block full-width">
+            <span class="text-muted post-date">12 / 02 / 2022 </span>
+            <div class="image-block-inner">
+              <a class="mh-100" href="#">
+                <img
+                  src="assets/images/bike3-news.jpg"
+                  alt=""
+                  class="img-responsive w-100" /></a
+              ><span class="hp-posts-cat mb-0">People</span>
+              <h4 class="mt-0 pt-0">
+                <div class="before-title">|</div>
+                <a href="#">200km pizza i lody! i kawa.</a>
+              </h4>
+              <!--  <p></p> -->
             </div>
-          </div>
-        </section>
-
-
-    <section class="w-100 tatry"> <div class="row bg-black align-items-center ps-3">
-        <div class="col-md-7 "><h2 class="text-white title-tatry ">PĘTELKA<br>TATRZAŃSKA</h2></div>
-        <div class="col-md-5 p-0 "><img src="./assets/images/PETELKA3.jpg"class="img-fluid"></div>
-    </div>
-
-    </section>
-    <section class="petelka w-100 h-100 align-items-center ">
-      
-      <div class="overlay d-flex">
-        <div class="row w-100 align-items-center justify-content-center"><div class="col-md-12 align-items-center justify-content-center"><h1 class="text-center h1-tatry">200 km <br> 2 dni <br>200 kolarzy <br> 4 edycje</h1></div></div>
-        
+            <!-- .image-block-inner -->
+          </li>
+          <li class="col-lg-2 col-md-4 col-xs-6 image-block full-width">
+            <span class="text-muted post-date">12 / 02 / 2022 </span>
+            <div class="image-block-inner">
+              <a class="mh-100" href="#">
+                <img
+                  src="assets/images/road-img.jpg"
+                  alt=""
+                  class="img-responsive w-100" /></a
+              ><span class="hp-posts-cat mb-0">Awards</span>
+              <h4 class="mt-0 pt-0">
+                <div class="before-title">|</div>
+                <a href="#">200km pizza i lody! i kawa.</a>
+              </h4>
+              <!--  <p></p> -->
+            </div>
+            <!-- .image-block-inner -->
+          </li>
+          <li class="col-lg-2 col-md-4 col-s-5 col-xs-6 image-block full-width">
+            <span class="text-muted post-date">12 / 02 / 2022 </span>
+            <div class="image-block-inner">
+              <a class="mh-100" href="#">
+                <img
+                  src="assets/images/hero-img2-news.jpg"
+                  alt=""
+                  class="img-responsive w-100" /></a
+              ><span class="hp-posts-cat mb-0">Awards</span>
+              <h4 class="mt-0 pt-0">
+                <div class="before-title">|</div>
+                <a href="#">200km pizza i lody! i kawa.</a>
+              </h4>
+              <!--  <p></p> -->
+            </div>
+            <!-- .image-block-inner -->
+          </li>
+          <li class="col-lg-2 col-md-4 col-xs-6 image-block full-width">
+            <span class="text-muted post-date">12 / 02 / 2022 </span>
+            <div class="image-block-inner">
+              <a class="mh-100" href="#">
+                <img
+                  src="assets/images/road-img.jpg"
+                  alt=""
+                  class="img-responsive w-100" /></a
+              ><span class="hp-posts-cat mb-0">Awards</span>
+              <h4 class="mt-0 pt-0">
+                <div class="before-title">|</div>
+                <a href="#">200km pizza i lody! i kawa.</a>
+              </h4>
+              <!--  <p></p> -->
+            </div>
+            <!-- .image-block-inner -->
+          </li>
+        </ul>
+      </div>
+      <div class="container container-blog mt-md-5">
+        <h2 class="mx-4 mb-5 text-center">więcej</h2>
       </div>
     </section>
-    
 
-    <section class="patrners w-100 text-center">
-      <div class="row justify-content-center text-center"> <div class="col-md-6"> <h2 class="mx-4 mb-5 text-center ">PARTNERZY</h2></div> 
-     </div>
-      <div class="row justify-content-center text-center"><div class="col-md-2 col-s-4">
-   <img class="img-fluid img-partner w-75 m-3"  src="assets/images/logo-trirent.png">
-     </div>
-     <div class="col-md-2 col-s-4">x</div>
-     <div class="col-md-2 col-s-4">x</div>
-     <div class="col-md-2 col-s-4">x</div>
-     
-     
-         </section>
-   
-
-        
-  
-
-<section class="footer">
-    <div class="row-fluid d-flex p-5 justify-content-center text-center">
-        <div class="col-md-4 col-sm-2 p-3 mt-4 "><h4>Follow us</h4><ul><li>Follow our Instagram</li><li>Follow us on Strava</li><li>follow us on Twitter</li><li>Like us on Fb</li></ul></div>
-        <div class="col-md-4 col-sm-2 p-3 mt-4 "><h4>Contact</h4><ul><li>email:</li></ul></div>
-        <div class="col-md-4 col-sm-2 p-3 mt-4 "><h4>Mailing List</h4><button>subscribe</button></buttn></div>
+    <div class="container cite mt-5 ms-0 ps-0">
+      <div class="row ms-0 ps-0 align-items-center">
+        <div class="col-md-4 ms-0 ps-0 align-items-start">
+          <img
+            class="img-fluid align-left slide-in"
+            src="./assets/images/pngegg-2.png"
+          />
+        </div>
+        <div class="col-md-7 text-end p-4">
+          <figure class="p-4">
+            <blockquote class="blockquote justify-content-end">
+              <p>
+                <b>Mamy wspólny cel</b>,czeka nas wspólna walka z kilometrami,
+                przewyższeniami, zmęczeniem i własnymi słabościami.
+              </p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Someone famous in <cite title="Source Title">TVP</cite>
+            </figcaption>
+          </figure>
+          <figure class="p-4 text-end">
+            <blockquote class="blockquote">
+              <p>Od kiedy jezdze z <b>Flahute</b> nie zlapalam zadnej gumy!</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Someone famous in <cite title="Source Title">TVN</cite>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
     </div>
-</section>
 
+    <section class="numbers mb-5 mt-3 p-3">
+      <div class="row p-4 justify-content-center">
+        <div class="col-md-6 text-center">
+          <p><b>razem</b>mozemy więcej</p>
+          <h5>bikes we love</h5>
+        </div>
+      </div>
+      <div class="row justify-content-center text-center mt-3">
+        <div class="col-md-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            transform="scale(3)"
+            class="bi bi-geo-fill icon-numbers"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"
+            />
+          </svg>
+          <p class="p-3">ROWERY</p>
+          <p id="counter-1"></p>
+        </div>
+        <div class="col-md-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            transform="scale(4)"
+            fill="currentColor"
+            class="bi bi-bicycle icon-numbers"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5zm1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139L5.5 6.943zM8 9.057 9.598 6.5H6.402L8 9.057zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877h1.035zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.623z"
+            />
+          </svg>
+          <p class="p-3">PROJEKTY</p>
+          <p id="counter-3"></p>
+        </div>
+        <div class="col-md-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            transform="scale(4)"
+            class="bi bi-star-fill icon-numbers"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+            />
+          </svg>
+          <p class="p-3">KILOMETRY</p>
+          <p id="counter-1" class="counter m-0 p-0"></p>
+        </div>
+      </div>
+    </section>
 
+    <section id="people">
+      <div class="container people-img">
+        <div class="row">
+          <div class="col-md-12 people text-end align-items-center">
+            <p>
+              <button class="btn btn-outline-warning btn-lg me-5 mt-0 p-3">
+                TEAM
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <div class="container">
+      <div class="row">
+        <div class="col m-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+          veniam, quis corrupti exercitationem, dignissimos voluptatem eaque
+          nostrum similique perspiciatis ea, praesentium accusamus eveniet odio.
+          Nobis accusantium culpa asperiores ad repudiandae.
+        </div>
+      </div>
+    </div>
 
+    <div class="py-5 team4">
+      <div class="container" id="people">
+        <div class="row justify-content-center mb-4">
+          <div class="col-md-7 text-center">
+            <h3 class="mb-3">Amazing Team</h3>
+            <h6 class="subtitle fw-light">zobacz, kto z nami jezdzi</h6>
+          </div>
+        </div>
+        <div class="row">
+          <!-- column  -->
+          <div class="col-md-3 col-xs-5 mb-4">
+            <!-- Row -->
+            <img
+              src="/assets/images/faces/biker-1.jpeg"
+              alt="wrapkit"
+              class="img-fluid rounded-circle"
+            />
 
+            <div class="pt-2">
+              <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
+              <h6 class="subtitle mb-3">Biker</h6>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Deleniti, assumenda.
+              </p>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none d-block px-1"
+                    ><i class="icon-social-facebook"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none d-block px-1"
+                    ><i class="icon-social-twitter"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none d-block px-1"
+                    ><i class="icon-social-instagram"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none d-block px-1"
+                    ><i class="icon-social-behance"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-    <script src="scripts.js"></script>
+          <div class="col-md-3 col-xs-5 mb-4">
+            <img
+              src="/assets/images/faces/biker-1.jpeg"
+              alt="wrapkit"
+              class="img-fluid rounded-circle"
+            />
+            <div class="pt-2">
+              <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
+              <h6 class="subtitle mb-3">Biker</h6>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Deleniti, assumenda.
+              </p>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none d-block px-1"
+                    ><i class="icon-social-facebook"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none d-block px-1"
+                    ><i class="icon-social-twitter"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none d-block px-1"
+                    ><i class="icon-social-instagram"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none d-block px-1"
+                    ><i class="icon-social-behance"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-xs-5 mb-4">
+            <img
+              src="/assets/images/faces/biker-1.jpeg"
+              alt="wrapkit"
+              class="img-fluid rounded-circle"
+            />
+
+            <div class="pt-2">
+              <h5 class="mt-4 font-weight-medium mb-0">Kuba Kuba</h5>
+              <h6 class="subtitle mb-3">Biker</h6>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Deleniti, assumenda.
+              </p>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none d-block px-1"
+                    ><i class="icon-social-facebook"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none d-block px-1"
+                    ><i class="icon-social-twitter"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none d-block px-1"
+                    ><i class="icon-social-instagram"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none d-block px-1"
+                    ><i class="icon-social-behance"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-xs-5 mb-4">
+            <img
+              src="/assets/images/faces/biker-1.jpeg"
+              alt="wrapkit"
+              class="img-fluid rounded-circle"
+            />
+
+            <div class="pt-2">
+              <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
+              <h6 class="subtitle mb-3">Biker</h6>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Deleniti, assumenda.
+              </p>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none d-block px-1"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-facebook"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                      /></svg
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none d-block px-1"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-twitter"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                      /></svg
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none d-block px-1"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-instagram"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                      /></svg
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none d-block px-1"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-strava"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M6.731 0 2 9.125h2.788L6.73 5.497l1.93 3.628h2.766L6.731 0zm4.694 9.125-1.372 2.756L8.66 9.125H6.547L10.053 16l3.484-6.875h-2.112z"
+                      /></svg
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="w-100 tatry">
+      <div class="row bg-black align-items-center ps-3">
+        <div class="col-md-7">
+          <h2 class="text-white title-tatry">PĘTELKA<br />TATRZAŃSKA</h2>
+        </div>
+        <div class="col-md-5 p-0">
+          <img src="./assets/images/PETELKA3.jpg" class="img-fluid" />
+        </div>
+      </div>
+    </section>
+    <section class="petelka w-100 h-100 align-items-center">
+      <div class="overlay d-flex">
+        <div class="row w-100 h-100 align-items-center justify-content-center">
+          <div class="col-md-12 align-items-center justify-content-center">
+            <h1 class="text-center h1-tatry">
+              200 km <br />
+              2 dni <br />200 kolarzy <br />
+              4 edycje
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partnerzy pt-3 pb-5">
+      <div class="container justify-content-center">
+        <div class="row text-center">
+          <h2 class="m-2">PARTNERZY</h2>
+        </div>
+
+        <strong>
+          <div class="row flex-wrap justify-content-center">
+            <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+              <img
+                alt=""
+                src="assets/images/logo-trirent.png"
+                class="img-fluid p-3 logo-partner w-75"
+              />
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+              <img
+                alt=""
+                src="assets/images/logo-trirent.png"
+                class="img-fluid logo-partner p-3 w-75"
+              />
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+              <img
+                alt=""
+                src="assets/images/eo-logo.png"
+                class="img-fluid p-3 logo-partner w-75"
+              />
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+              <img
+                alt=""
+                src="assets/images/logo-trirent.png"
+                class="img-fluid logo-partner p-3 w-75"
+              />
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+              <img
+                alt=""
+                src="assets/images/eo-logo.png"
+                class="img-fluid logo-partner p-3 w-75"
+              />
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+              <img
+                alt=""
+                src="assets/images/logo-trirent.png"
+                class="img-fluid logo-partner p-3 w-75"
+              />
+            </div>
+          </div>
+        </strong>
+      </div>
+    </section>
+
+    <section class="footer" id="footer">
+      <div class="row-fluid d-flex p-5 justify-content-center text-center">
+        <div class="col-md-4 col-sm-4 mt-4">
+          <h4>Follow us</h4>
+          <ul class="fw-light text-start">
+            <li>Follow our Instagram</li>
+            <li>Follow us on Strava</li>
+            <li>follow us on Twitter</li>
+            <li>Like us on Fb</li>
+          </ul>
+        </div>
+        <div class="col-md- col-sm-4 mt-4">
+          <h4>Contact</h4>
+          <ul class="fw-light text-start">
+            <li>email: flahute@ccc.pl</li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-4 mt-4">
+          <h4>Mailing List</h4>
+          <button>subscribe</button>
+        </div>
+      </div>
+    </section>
+    <script src="js/scripts.js"></script>
+    <script src="js/baguetteBox.min.js" async></script>
   </body>
 </html>

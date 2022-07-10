@@ -93,14 +93,18 @@ function checkSlide() {
 
 window.addEventListener("scroll", debounce(checkSlide));
 
-const faceImg = document.querySelector(".face-img");
+// const faceImg = document.querySelector(".face-img");
 
-console.log(faceImg);
+// console.log(faceImg);
 
-faceImg.addEventListener("click", enlarge);
+// faceImg.addEventListener("click", enlarge);
 
-function enlarge(e) {
-  console.log("click");
-  console.log(e.target);
-  e.target.classList.add = "enlarged";
-}
+// function enlarge(e) {
+//   console.log("click");
+//   console.log(e.target);
+//   e.target.classList.add = "enlarged";
+// }
+
+window.addEventListener("load", function () {
+  baguetteBox.run("tz.gallery");
+});

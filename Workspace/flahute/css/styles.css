@@ -93,21 +93,25 @@ body {
 }
 
 .petelka {
-  background-image: url(./assets/images/petelka-img-main.jpeg);
+  background-image: url(/assets/images/petelka-img-main.jpeg);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -2;
   background-size: 100%;
   margin: 0;
-  background-size: cover;
-  z-index: -2;
 }
 
 .overlay {
   opacity: 0.8;
-  z-index: -1;
+  z-index: -2;
   background-color: #bdbdbd;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
-  width: 100%;
+  background-attachment: fixed;
+  z-index: -2;
+  background-size: 100%;
+  margin: 0;
 }
 
 .petelka-svg {
@@ -156,7 +160,7 @@ body {
   width: 100%;
   height: 500px;
 
-  background: url("assets/images/ludzie-1.jpg");
+  background: url("/assets/images/ludzie-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -313,7 +317,7 @@ body {
 }
 
 .numbers {
-  background-image: url(./assets/images/PETELKA.jpeg);
+  background-image: url(/assets/images/PETELKA.jpeg);
 
   color: #f7f7f7;
   background-size: cover;
@@ -358,11 +362,12 @@ body {
 }
 
 .title-tatry {
-  font-size: var(--font-sizeL);
+  font-size: var(--font-sizeM);
 }
 
 .h1-tatry {
-  font-size: var(--font-sizeL);
+  font-size: var(--font-sizeM);
+  padding: 2rem;
 }
 
 .enlarged {
@@ -512,5 +517,107 @@ h4:hover .before-title {
   .mx-lg-0 {
     margin-left: 0;
     margin-right: 0;
+  }
+}
+.partnerzy {
+  z-index: 2;
+}
+.logo-partner {
+  filter: grayscale();
+  -webkit-filter: grayscale();
+}
+
+.logo-partner:hover {
+  filter: none;
+  -webkit-filter: none;
+  transform: scale(1.03);
+}
+/* blog-gallery */
+
+.lightbox img {
+  width: 100%;
+  margin-bottom: 30px;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  max-height: 198px;
+  object-fit: cover;
+}
+
+.container.gallery-container {
+  background-color: #fff;
+  color: #35373a;
+  min-height: 100vh;
+  padding: 30px 50px;
+}
+
+.gallery-container h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Droid Sans", sans-serif;
+  font-weight: bold;
+}
+
+.gallery-container p.page-description {
+  text-align: center;
+  margin: 25px auto;
+  font-size: 18px;
+  color: #999;
+}
+
+.tz-gallery {
+  padding: 40px;
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row > div {
+  padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+  width: 100%;
+  border-radius: 0;
+  position: relative;
+}
+
+.tz-gallery .lightbox:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -13px;
+  margin-left: -13px;
+  opacity: 0;
+  color: #fff;
+  font-size: 26px;
+  font-family: "Glyphicons Halflings";
+  content: "\e003";
+  pointer-events: none;
+  z-index: 9000;
+  transition: 0.4s;
+}
+
+.tz-gallery .lightbox:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(46, 132, 206, 0.7);
+  content: "";
+  transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+  opacity: 1;
+}
+
+.baguetteBox-button {
+  background-color: transparent !important;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
   }
 }
