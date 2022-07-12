@@ -25,14 +25,6 @@ body {
   padding: 0;
 }
 
-/* .top-nav {
-  background-color: #2f4f4f;
-  max-height: 35rem;
-  color: white;
-  text-align: center;
-  display: flex;
-  justify-content: flex-end;
-} */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -49,6 +41,10 @@ body {
 .nav-icons a {
   color: whitesmoke;
   padding: 1rem;
+}
+
+.navbar .navbar-nav li a:hover {
+  color: red;
 }
 
 .container-caption {
@@ -178,6 +174,9 @@ body {
   margin-right: 19px;
 }
 
+.more-people {
+  text-decoration: none;
+}
 .partners {
   background-color: #f7f7f7;
   margin-top: 40px;
@@ -209,7 +208,18 @@ body {
 
 .blog-main-text {
   line-height: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
+
+@media (max-width: 550px) {
+  .blog-main-text {
+    line-height: 2rem;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+
 .big-letter::first-letter {
   font-size: 300%;
   color: #e22b49;
@@ -218,6 +228,19 @@ body {
 .blog-text {
   background-color: var(--lightGrey-color);
   padding: 3rem;
+}
+
+.more-text-bg {
+  background-color: rgba(176, 208, 166, 0.339);
+}
+.text-more:hover {
+  font-weight: 900;
+  color: #2f4f4f;
+  cursor: pointer;
+}
+
+.bg-caption-blog {
+  background-color: rgba(172, 200, 229, 0.4);
 }
 
 .cite {
@@ -229,6 +252,35 @@ body {
 .they-say {
   display: inline;
   z-index: 30;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+  cursor: pointer;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #2f4f4f;
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-out;
+  -webkit-transition: transform 0.2s ease-out;
+  -moz-transition: transform 0.2s ease-out;
+  -ms-transition: transform 0.2s ease-out;
+  -o-transition: transform 0.2s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* TEAM */
@@ -525,6 +577,7 @@ h4:hover .before-title {
 .logo-partner {
   filter: grayscale();
   -webkit-filter: grayscale();
+  cursor: pointer;
 }
 
 .logo-partner:hover {
@@ -532,92 +585,132 @@ h4:hover .before-title {
   -webkit-filter: none;
   transform: scale(1.03);
 }
-/* blog-gallery */
+/* 
+blog-gallery */
 
-.lightbox img {
-  width: 100%;
-  margin-bottom: 30px;
-  transition: 0.2s ease-in-out;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-  max-height: 198px;
-  object-fit: cover;
-}
-
-.container.gallery-container {
-  background-color: #fff;
-  color: #35373a;
-  min-height: 100vh;
-  padding: 30px 50px;
-}
-
-.gallery-container h1 {
-  text-align: center;
-  margin-top: 50px;
-  font-family: "Droid Sans", sans-serif;
-  font-weight: bold;
-}
-
-.gallery-container p.page-description {
-  text-align: center;
-  margin: 25px auto;
-  font-size: 18px;
-  color: #999;
-}
-
-.tz-gallery {
-  padding: 40px;
-}
-
-/* Override bootstrap column paddings */
-.tz-gallery .row > div {
-  padding: 2px;
-}
-
-.tz-gallery .lightbox img {
-  width: 100%;
-  border-radius: 0;
-  position: relative;
-}
-
-.tz-gallery .lightbox:before {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -13px;
-  margin-left: -13px;
-  opacity: 0;
-  color: #fff;
-  font-size: 26px;
-  font-family: "Glyphicons Halflings";
-  content: "\e003";
-  pointer-events: none;
-  z-index: 9000;
-  transition: 0.4s;
-}
-
-.tz-gallery .lightbox:after {
-  position: absolute;
-  top: 0;
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 30px;
   left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
-  background-color: rgba(46, 132, 206, 0.7);
-  content: "";
-  transition: 0.4s;
+  overflow: hidden;
+  background-color: black;
 }
 
-.tz-gallery .lightbox:hover:after,
-.tz-gallery .lightbox:hover:before {
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  background: black;
+  color: white;
+  width: 100%;
+}
+
+.active,
+.demo:hover {
   opacity: 1;
 }
 
-.baguetteBox-button {
-  background-color: transparent !important;
+img.hover-shadow {
+  transition: 0.3s;
 }
 
-@media (max-width: 768px) {
-  body {
-    padding: 0;
-  }
+.hover-shadow:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mask-custom {
+  backdrop-filter: contrast(90%) brightness(40%) saturate(110%) sepia(0%)
+    hue-rotate(0deg) grayscale(0%) invert(0%) blur(0px);
+  mix-blend-mode: multiply;
+  background: radial-gradient(
+    50% 50%,
+    circle closest-corner,
+    rgba(255, 177, 166, 1) 50,
+    rgba(198, 184, 198, 0.114)
+  );
+  opacity: 0.5;
+}
+
+.text-event {
+  z-index: 999;
+}
+
+.link-deco {
+  text-decoration: none;
+  color: inherit;
 }
