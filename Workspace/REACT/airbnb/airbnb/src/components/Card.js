@@ -1,16 +1,7 @@
 import React from "react";
 import style from "../style.css";
 
-const Card = ({
-  experience,
-  title,
-  rating,
-  coverImg,
-  price,
-  location,
-  reviewCount,
-  openSpots,
-}) => {
+const Card = ({ experience }) => {
   let badgeText;
   if (experience.openSpots === 0) {
     badgeText = "SOLD OUT";
