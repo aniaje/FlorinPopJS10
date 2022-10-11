@@ -1,24 +1,44 @@
 import React from "react";
 import style from "../style.css";
-import Star from "../images/card/Star 1.png";
 
-const Card = ({ name, score, image, price, country, reviewCount }) => {
+const Card = ({
+  experience,
+  title,
+  rating,
+  coverImg,
+  price,
+  location,
+  reviewCount,
+  openSpots,
+}) => {
+  let badgeText;
+  if (experience.openSpots === 0) {
+    badgeText = "SOLD OUT";
+  } else if (experience.location === "Online") {
+    badgeText = "ONLINE";
+  } else {
+    badgeText = "";
+  }
+
   return (
     <div className="card">
-      <img src={image} />
+      {badgeText && <div className="card--badge">{badgeText}</div>}
+      <img src={experience.coverImg} className="card--photo" />
 
       <div className="rank">
-        <img src={Star} className="card--star" />
+        <img src="../images/star 1.png" className="card--star" />
         <p>
-          {score}
+          {experience.stats.rating}
           <span>
-            ({reviewCount}) {country}
+            ({experience.stats.reviewCount}) {experience.location}
           </span>
         </p>
       </div>
-      <p>{name}</p>
-      <p>
-        <b>From ${price}</b> / person
+      <p>{experience.title}</p>
+      <p className="card--price">
+        <span>
+          <b>From ${experience.price}</b> / person
+        </span>
       </p>
     </div>
   );

@@ -2,21 +2,18 @@ import React from "react";
 import Navbar from "./components/Navbar.js";
 import Hero from "./components/Hero";
 import Card from "./components/Card";
-import Zeferes from "./images/card/image-12.png";
+import data from "./data.js";
 
 const App = () => {
+  const expData = data.map((experience) => {
+    return <Card id={experience.id} experience={experience} />;
+  });
+
   return (
     <>
       <Navbar />
       <Hero />
-      <Card
-        name="active activities led by o"
-        score="7.0"
-        image={Zeferes}
-        price={126}
-        country="Poland"
-        reviewCount="3.0"
-      />
+      <section className="cards-list">{expData}</section>
     </>
   );
 };
