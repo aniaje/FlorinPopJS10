@@ -1,11 +1,10 @@
 import React from "react";
 import style from "./style.css";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import data from "./data.js";
 
 const Card = ({ travel }) => {
   let endDateText;
-  if ((travel.dates.end = true)) {
+  if (travel.dates.end == "") {
     endDateText = "ongoing!";
   } else {
     endDateText = travel.dates.end;
@@ -24,7 +23,7 @@ const Card = ({ travel }) => {
         </p>
         <h1 className="card--title"> {travel.title}</h1>
         <p className="card--dates">
-          {travel.dates.start} -{endDateText}
+          {travel.dates.start} - {endDateText}
         </p>
         <p className="card--desc">{travel.description}</p>
       </div>
